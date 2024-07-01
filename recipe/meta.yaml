@@ -1,4 +1,4 @@
-{% set version = "1.1.0" %}
+{% set version = "1.1.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/mirai_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/mirai/mirai_{{ version }}.tar.gz
-  sha256: bc54ea155e9d45e0be2fd1dfdf256fafc742177d638078824231d21f5fe6035b
+  sha256: 66b63d1b8e212e466cb89051b677ec9409a3ef10548cf7b2768920343488591f
 
 build:
   merge_build_host: true  # [win]
