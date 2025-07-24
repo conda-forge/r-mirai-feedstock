@@ -24,10 +24,10 @@ requirements:
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
-    - r-nanonext >=1.1.0
+    - r-nanonext >=1.5.2
   run:
     - r-base
-    - r-nanonext >=1.1.0
+    - r-nanonext >=1.5.2
 
 test:
   commands:
