@@ -1,4 +1,4 @@
-{% set version = "2.5.3" %}
+{% set version = "2.6.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/mirai_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/mirai/mirai_{{ version }}.tar.gz
-  sha256: 17a5b48b3bb21498a09f289099d03646a57136555a3ceb0105e45400722a8eda
+  sha256: d2b3f6826598b844b80018910d6f4b299f6569e49e05dd0e97462de84e3ea551
 
 build:
   number: 0
@@ -38,8 +38,8 @@ about:
   home: https://shikokuchuo.net/mirai/
   dev_url: https://github.com/shikokuchuo/mirai/
   license: GPL-3.0-or-later
-  summary: Lightweight parallel code execution and distributed computing. Designed for simplicity, a 'mirai' evaluates an R expression asynchronously, on local or network resources, resolving automatically upon completion. Efficient scheduling over fast inter-process communications or secure TLS connections over TCP/IP,
-    built on 'nanonext' and 'NNG' (Nanomsg Next Gen).
+  summary: Lightweight parallel code execution and distributed computing. Designed for simplicity, a 'mirai' evaluates an R expression asynchronously, on local or network resources, resolving automatically upon completion. Efficient scheduling over fast inter-process communications or secure TLS connections over 
+    TCP/IP, built on 'nanonext' and 'NNG' (Nanomsg Next Gen).
   license_family: GPL3
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
