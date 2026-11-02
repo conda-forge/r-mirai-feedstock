@@ -1,4 +1,4 @@
-{% set version = "2.7.2" %}
+{% set version = "2.7.4" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/mirai_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/mirai/mirai_{{ version }}.tar.gz
-  sha256: 78a32dac63fbc4da00aaa8c4c15d6c2d8b41bb1addf88a0bdaf96add58fb5939
+  sha256: 1129900452ecb5f7249accbbb96b8ed2e2ba2275012bd5f37334eca4589b02cd
 
 build:
   number: 0
